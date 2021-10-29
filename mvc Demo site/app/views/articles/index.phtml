@@ -1,0 +1,10 @@
+<h3>
+	<?php echo $view->title; ?> INDEX
+</h3>
+	een echo uit de articles - <b>show.php</b><br>
+<?php
+	foreach($view->data as $value)	{
+		echo $value['title'].' - '.$value['content']."&emsp;";
+		echo '<br>';
+	}
+?>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+	<title>MVC demo-site</title>
+	<link href="css/site.css" rel="stylesheet" type="text/css">
+	<?= $this->getCss() ?>
+	<style type="text/css">
+		article {
+			width: 600px; heigth:500px;
+			min-height: 400px;
+			background-color: #c0c0c0;
+			margin: auto;
+		}
+	</style>
+</head>
+<body bgcolor="#92b6dc">
+	<h2>MVC demo-site ++ myLayout</h2>
+	<a href="index.php?controller=articles&action=index">articles index</a> |
+	<a href="index.php?controller=articles&action=show">articles show</a> |
+	<hr>
+    <article>
+	<?= $this->getView() ?>
+    </article>
+	<p class="author">me</p>
+</body>

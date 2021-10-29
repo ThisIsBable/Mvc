@@ -1,0 +1,10 @@
+<h3><?php echo $this->view->title;?></h3>
+
+een echo uit de gallery van het bestand <b>show.phtml</b><br>
+
+<?php
+ foreach($this->view->arrayImages as $imagepath)
+ {
+     echo '<img src="'.$imagepath.'"height="100px">';
+ }
+ ?>
